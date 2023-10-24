@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="flavourfeastlogo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="flavourfeastlogo-removebg-preview.png" alt="Flavour Feast" height="65">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Order</a></li>
+            <li><a href="#navbar">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()"><h1>&#9776</h1></div>
+    </nav>
+    <section id="space">
+        <h1>Contact Us:</h1>
+    </section>
+    <section id="fm-area">
+        <div id="form-container">
+            <form id="myForm" onsubmit="sendEmail(); reset(); return false;">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="inp" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="inp" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Your Message</label>
+                    <textarea name="phone" id="phone" cols="30" rows="10" class="inp" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="contact.js"></script>
+</html>

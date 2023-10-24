@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.nav-links a:hover{
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+}
+
+.logo img {
+    max-width: 100px;
+    margin-left: 40%;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    position: relative;
+    margin-bottom: 12%;
+}
+
+.card {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+    max-width: 80%;
+    background-color: #ffffff;
+    opacity: 0.7;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1%;
+}
+
+.images-area{
+    display: block;
+    padding: 10px;
+}
+
+.card img {
+    width: 50%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.card-content {
+    padding: 20px;
+    width: 50%;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.order-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-button:hover {
+    background-color: #0056b3;
+}
+
+.a1:hover, .a2:hover, .a3:hover, .a4:hover{
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+
+#form-container {
+    background-color: #fff;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 2px #8d8383;
+    padding: 20px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+#cont{
+    display: none;
+}
+
+.space{
+    height: 10vh;
+    background-color: #ffff;
+}
+
+.space h1{
+    font-family: 'Rubik', sans-serif;
+    background-image: linear-gradient(to right, #000000, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    background-color: #ffff;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="text"] {
+    width: 90%;
+}
+
+.form-group button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-group button:hover{
+    padding: 12px 22px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+    transition: all 0.1s ease;
+}
+
+#myForm{
+    background-color: #fff;
+}
+
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo img{
+        margin-left: 230%;
+    }
+
+    #card{
+        display: block;
+    }
+
+    .images-area{
+        display: flex;
+    }
+
+    .card-content{
+        width: 85%;
+    }
+    
+    #form-container{
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    *{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .space h1{
+        font-size: 1.5rem;
+    }
+}

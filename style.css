@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.nav-links a:hover{
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+}
+
+.logo img {
+    max-width: 100px;
+    margin-left: 40%;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    position: relative;
+    margin-bottom: 12%;
+}
+
+#blue-section {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #0c0450;
+    right: 0;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    margin-top: 21%;
+}
+#blue-section-2 {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    background-color: #0c0450;
+    clip-path: polygon(50% 0, 100% 50%, 0 100%);
+    right: 511px;
+    margin-top: 21%;
+    rotate: 90deg;
+}
+
+#sep-main{
+    height: 10vh;
+    background-color: #0c0450;
+}
+#image {
+    position: absolute;
+    height: 50%;
+    object-fit: cover;
+    z-index: 2;
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#main{
+    height: 70vh;
+    background-color: #0c0450;
+    box-shadow: 10px 15px 10px 5px #b3a3a3;
+}
+
+.blank{
+    background-color: #0c0450;
+    margin-top: 10%;
+}
+
+#about-button, #contact-button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+#about-button{
+    margin-left: 30%;
+}
+
+#about-button:hover, #contact-button:hover{
+    padding: 6px 11px;
+    transition: all 0.3s ease;
+}
+
+#contact-button{
+    margin-right: 30%;
+}
+
+.text-box{
+    height: 25vh;
+    width: 30vw;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    box-shadow: 0 0 10px 10px rgb(153, 145, 145);
+    margin-top: 13%;
+    margin-left: 15%;
+    font-style: italic;
+}
+
+.text-box h1{
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.2rem;
+    padding-left: 2%;
+}
+
+#button-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 20px;
+    height: auto;
+    border: 2px solid white;
+    display: none;
+    padding-bottom: 10px;
+}
+
+.flavour-feast-product{
+    margin-top: 2%;
+    box-shadow: 0 0 10px 5px #ddcdcd;
+}
+
+.slide.active {
+    display: block;
+    animation: slide 5s ease-in-out infinite;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+.division{
+    height: 50vh;
+    width: 100%;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    padding: 20px;
+}
+
+.product-card img {
+    max-width: 100%;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.about-product {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.order-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.order-button:hover {
+    background-color: #0056b3;
+}
+
+.flavour-feast-product{
+    width: 95%;
+    border: 2px solid #000;
+    border-radius: 6px;
+    margin-left: 2.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.flavour-feast-product h1{
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, #6a00f5, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.flavour-feast-product p{
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+}
+
+.flavour-feast-intro{
+    width: 95%;
+    border: 2px solid #000;
+    border-radius: 6px;
+    margin-left: 2.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 12%;
+    box-shadow: 0 0 10px 5px #ddcdcd;
+}
+
+.flavour-feast-intro h1{
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, #6a00f5, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.flavour-feast-intro p{
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+}
+
+.mains{
+    margin-top: 2%;
+}
+
+#about-a{
+    margin-left: 25%;
+}
+
+#about-c{
+    margin-right: 25%;
+}
+
+.review-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.rating {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+.review-text {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.review-date {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.review-area{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+    margin-top: 3%;
+}
+
+.rv1{
+    margin-left: 3%;
+}
+
+.rv3{
+    margin-right: 3%;
+}
+
+#footer{
+    height: 5vh;
+    width: 100%;
+    background-color: #fcecec;
+}
+
+#footer ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.lks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+
+#ft3{
+    margin-right: 3%;
+}
+
+#footer h5{
+    color: #998b8b;
+    font-weight: lighter;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo img{
+        margin-left: 230%;
+    }
+
+    #image{
+        height: 17%;
+        margin-top: 20%;
+    }
+
+    .text-box{
+        margin-top: 25%;
+        width: 50vw;
+        height: 15vh;
+        margin-left: 5%;
+    }
+
+    .text-box h1, .text-box h2{
+        font-size: 0.8rem;
+    }
+
+    #about-button{
+        padding: 4px 8px;
+        margin-left: 10%;
+    }
+
+    #contact-button{
+        padding: 4px 8px;
+        margin-left: 10%;
+    }
+
+    .product-card{
+        height: auto;
+        margin-left: 15%;
+    }
+
+    .product-card img{
+        height: 100px;
+    }
+
+    .product-name{
+        font-size: 1rem;
+    }
+
+    .review-area{
+        display: block;
+    }
+
+    .rv1, .rv2, .rv3{
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+
+    .flavour-feast-intro{
+        margin-top: 35%;
+    }
+
+    .ft a{
+        font-size: 0.6rem;
+    }
+
+    #footer{
+        height: 3vh;
+    }
+
+    #ft3{
+        margin-right: 7%;
+    }
+}

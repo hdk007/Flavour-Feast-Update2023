@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('spice-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.nav-links a:hover{
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+}
+
+.logo img {
+    max-width: 100px;
+    margin-left: 40%;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    position: relative;
+    margin-bottom: 12%;
+}
+
+#contact-head{
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, #f90505, #1505a0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+body{
+    background-color: #ffff;
+}
+
+
+#form-container {
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(218, 219, 216);
+    padding: 20px;
+    width: 60%;
+    margin-left: 20%;
+    font-family: 'Teko', sans-serif;
+}
+
+#space{
+    height: 10vh;
+    background-color: transparent;
+}
+
+#space h1{
+    font-family: 'Rubik', sans-serif;
+    background-image: linear-gradient(to right, #ffffff, #c4c10c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffff;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.form-group input[type="text"] {
+    width: 90%;
+}
+
+.form-group button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px 2px rgb(158, 150, 150);
+    cursor: pointer;
+}
+
+.form-group button:hover{
+    padding: 12px 22px;
+    transition: all 0.1s ease;
+}
+
+#myForm{
+    background-color: transparent;
+}
+
+#phone{
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    *{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #000000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-right: 20px;
+    }
+    
+    .menu li{
+        width: 100%;
+        margin-left: 80px;
+    }
+
+    .insta h1{
+        font-size: 1rem;
+    }
+
+    .insta  img{
+        height: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo img{
+        margin-left: 230%;
+    }
+
+    #form-container {
+        margin-left: 15%;
+    }
+
+    body{
+        background-size: cover;
+        height: 100vh;
+    }
+}
